@@ -11,7 +11,7 @@ import com.HngProject.HngProject.dto.response.UpdatePersonResponse;
 public class Mapper {
 
     public static void mapFetchPersonResponse(FetchPersonResponse fetchPersonResponse, Persons foundPerson) {
-        fetchPersonResponse.setId(foundPerson.getId());
+//        fetchPersonResponse.setId(foundPerson.getId());
         fetchPersonResponse.setFirstName(foundPerson.getFirstName());
         fetchPersonResponse.setLastName(foundPerson.getLastName());
         fetchPersonResponse.setEmailAddress(foundPerson.getEmailAddress());
@@ -31,7 +31,7 @@ public class Mapper {
         persons.setAddress(address);
     }
     public static void mapCreatePersonResponse(CreatePersonResponse personResponse, Persons savedPerson) {
-        personResponse.setId(savedPerson.getId());
+//        personResponse.setId(savedPerson.getId());
         personResponse.setFirstName(savedPerson.getFirstName());
         personResponse.setLastName(savedPerson.getLastName());
         personResponse.setEmailAddress(savedPerson.getEmailAddress());

@@ -4,7 +4,7 @@ import com.HngProject.HngProject.data.models.Address;
 import com.HngProject.HngProject.data.models.Gender;
 
 import lombok.*;
-import org.springframework.data.mongodb.core.index.Indexed;
+
 
 @Getter
 @Setter
