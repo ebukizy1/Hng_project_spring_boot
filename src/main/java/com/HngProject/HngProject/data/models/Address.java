@@ -1,18 +1,21 @@
 package com.HngProject.HngProject.data.models;
 
+import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("address")
+
+//@Entity(name = "address")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Embeddable
 public class Address {
     @Id
-    private String addressId;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "id", nullable = false)
+    private Long id;
     private String country;
     private String state;
     private String city;
